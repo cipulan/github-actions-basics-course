@@ -10,12 +10,18 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Print Hello World
-              run: echo "Hello World!"
-               cat /etc/os-release
+              run: |
+                echo "Hello World!"
+                cat /etc/os-release
+                pwd
+                ls -al
     
     print-echo:
         runs-on: ubuntu-20.04
         steps:
             - name: Print Echo
-              run: echo "Echo!"
-               cat /etc/os-release
+              run: |
+                echo "Hello World!"
+                cat /etc/os-release
+                pwd
+                ls -al
