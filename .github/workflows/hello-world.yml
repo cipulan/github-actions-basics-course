@@ -11,3 +11,11 @@ jobs:
         steps:
             - name: Print Hello World
               run: echo "Hello World!"
+               cat /etc/os-release
+    
+    print-echo:
+        runs-on: ubuntu-20.04
+        steps:
+            - name: Print Echo
+              run: echo "Echo!"
+               cat /etc/os-release
